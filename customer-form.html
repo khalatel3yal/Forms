@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب خالة أطفال - خالة العيال</title>
+    <link rel="stylesheet" href="customer-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="خالة العيال">
+            </div>
+            <h1>احجزي خالة أطفال محترفة 👶</h1>
+        </div>
+
+        <div class="intro">
+            <h2>🌟 مين احنا؟</h2>
+            <p><strong>خالة العيال</strong> هي شركة رائدة في مجال مجالسة الأطفال في مصر، مسجلة قانونياً ومعتمدة.</p>
+            <p>شركة مسجلة برقم <strong>696-598-477</strong> | سجل ضريبي رقم <strong>1089</strong></p>
+            <p>بنوفر خدمة مجالسة الأطفال عن طريق خالات محترفات</p>
+
+            <h2 style="margin-top: 20px;">💖 ليه تختارينا؟</h2>
+            <ul>
+                <li>خالات مدربات ومؤهلات</li>
+                <li>فحص وتدقيق شامل للخالات</li>
+                <li>خدمة عملاء متاحة دائماً</li>
+                <li>أسعار مناسبة ومرونة في المواعيد</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <div class="info-icon">ℹ️</div>
+            <div class="info-content">
+                <h3>معلومات هامة</h3>
+                <p>سيتم حفظ بياناتك بشكل آمن والتواصل معك في أقرب وقت. حالياً نقوم بتسجيل الطلبات وسنتواصل معك فور توفر
+                    الخدمة في منطقتك.</p>
+            </div>
+        </div>
+
+        <form id="customerForm" class="form-section">
+            <h2>بيانات التواصل</h2>
+
+            <div class="form-group">
+                <label>الاسم بالكامل <span class="required">*</span></label>
+                <input type="text" name="name" required placeholder="اكتبي اسمك الكامل">
+            </div>
+
+            <div class="form-group">
+                <label>رقم الهاتف <span class="required">*</span></label>
+                <input type="tel" name="phone" required placeholder="01xxxxxxxxx" pattern="^01[0-9]{9}$"
+                    title="أدخلي رقم مصري صحيح (01xxxxxxxxx)">
+            </div>
+
+            <div class="form-group">
+                <label>رقم هاتف بديل</label>
+                <input type="tel" name="alternativePhone" placeholder="01xxxxxxxxx" pattern="^01[0-9]{9}$">
+            </div>
+
+            <div class="form-group">
+                <label>المحافظة <span class="required">*</span></label>
+                <select name="governorate" required>
+                    <option value="">اختاري المحافظة</option>
+                    <option value="القاهرة">القاهرة</option>
+                    <option value="الجيزة">الجيزة</option>
+                    <option value="القليوبية">القليوبية</option>
+                    <option value="الإسكندرية">الإسكندرية</option>
+                    <option value="الشرقية">الشرقية</option>
+                    <option value="الدقهلية">الدقهلية</option>
+                    <option value="البحيرة">البحيرة</option>
+                    <option value="المنوفية">المنوفية</option>
+                    <option value="الغربية">الغربية</option>
+                    <option value="كفر الشيخ">كفر الشيخ</option>
+                    <option value="دمياط">دمياط</option>
+                    <option value="بورسعيد">بورسعيد</option>
+                    <option value="الإسماعيلية">الإسماعيلية</option>
+                    <option value="السويس">السويس</option>
+                    <option value="الفيوم">الفيوم</option>
+                    <option value="بني سويف">بني سويف</option>
+                    <option value="المنيا">المنيا</option>
+                    <option value="أسيوط">أسيوط</option>
+                    <option value="سوهاج">سوهاج</option>
+                    <option value="قنا">قنا</option>
+                    <option value="الأقصر">الأقصر</option>
+                    <option value="أسوان">أسوان</option>
+                    <option value="البحر الأحمر">البحر الأحمر</option>
+                    <option value="الوادي الجديد">الوادي الجديد</option>
+                    <option value="مطروح">مطروح</option>
+                    <option value="شمال سيناء">شمال سيناء</option>
+                    <option value="جنوب سيناء">جنوب سيناء</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>المنطقة/الحي <span class="required">*</span></label>
+                <input type="text" name="area" required placeholder="مثال: مدينة نصر، المعادي، إلخ">
+            </div>
+
+            <div class="form-group">
+                <label>العنوان بالتفصيل <span class="required">*</span></label>
+                <textarea name="address" required
+                    placeholder="اكتبي العنوان الكامل (الشارع، رقم المبنى، إلخ)"></textarea>
+            </div>
+
+            <h2 style="margin-top: 30px;">تفاصيل الطلب</h2>
+
+            <div class="form-group">
+                <label>عدد الأطفال <span class="required">*</span></label>
+                <input type="number" name="numberOfChildren" required min="1" max="10" placeholder="مثال: 2">
+            </div>
+
+            <div class="form-group">
+                <label>أعمار الأطفال <span class="required">*</span></label>
+                <input type="text" name="childrenAges" required placeholder="مثال: 3 سنوات، 5 سنوات">
+            </div>
+
+            <div class="form-group">
+                <label>نوع الخدمة المطلوبة <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="hourly" name="serviceType" value="ساعات" required>
+                        <label for="hourly">ساعات</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="daily" name="serviceType" value="يومي" required>
+                        <label for="daily">يومي</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="monthly" name="serviceType" value="شهري" required>
+                        <label for="monthly">شهري</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>احتياجات خاصة للأطفال</label>
+                <textarea name="specialNeeds" placeholder="مثال: طفل يحتاج رعاية خاصة، حساسية معينة، إلخ"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>ملاحظات إضافية</label>
+                <textarea name="notes" placeholder="أي معلومات أخرى تحبي تضيفيها"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">حفظ الطلب 💝</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            <h2>🎉 تم حفظ طلبك بنجاح!</h2>
+            <p>شكراً ليكي، تم حفظ بياناتك وهنتواصل معاكي في أقرب وقت 💕</p>
+            <button onclick="window.location.href='home.html'" class="back-btn">العودة للرئيسية</button>
+        </div>
+    </div>
+
+    <script src="customer-script.js"></script>
+</body>
+
+</html>

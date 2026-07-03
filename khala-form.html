@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انضمي لفريق خالة العيال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="خالة العيال">
+            </div>
+            <h1>انضمي لعيلة "خالة العيال" 💝</h1>
+            <p>نورتينا! املي البيانات وهنتواصل معاكي قريب</p>
+        </div>
+
+        <div class="intro">
+            <h2>🌟 مين احنا؟</h2>
+            <p><strong>خالة العيال</strong> هي شركة رائدة في مجال مجالسة الأطفال في مصر، مسجلة قانونياً ومعتمدة.</p>
+            <p>شركة مسجلة برقم <strong>696-598-477</strong> | سجل ضريبي رقم <strong>1089</strong></p>
+            <p>بنوفر خدمة مجالسة الأطفال عن طريق خالات محترفات</p>
+
+            <h2 style="margin-top: 20px;">💖 ليه تنضمي لينا؟</h2>
+            <ul>
+                <li>بيئة عمل آمنة ومحترمة</li>
+                <li>مرونة في أوقات العمل</li>
+                <li>تدريب مستمر ودعم دائم</li>
+                <li>فرص نمو وتطوير مهني</li>
+            </ul>
+        </div>
+
+        <form id="applicationForm" class="form-section">
+            <div class="form-group">
+                <label>الاسم بالكامل <span class="required">*</span></label>
+                <input type="text" name="name" required placeholder="اكتبي اسمك الكامل">
+            </div>
+
+            <div class="form-group">
+                <label>السن <span class="required">*</span></label>
+                <input type="number" name="age" required min="18" max="60" placeholder="مثال: 25">
+            </div>
+
+            <div class="form-group">
+                <label>الجنسية <span class="required">*</span></label>
+                <select name="nationality" required>
+                    <option value="">اختاري الجنسية</option>
+                    <option value="مصرية">مصرية</option>
+                    <option value="سودانية">سودانية</option>
+                    <option value="سورية">سورية</option>
+                    <option value="أخرى">أخرى</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>المحافظة <span class="required">*</span></label>
+                <select name="governorate" required>
+                    <option value="">اختاري المحافظة</option>
+                    <option value="القاهرة">القاهرة</option>
+                    <option value="الجيزة">الجيزة</option>
+                    <option value="القليوبية">القليوبية</option>
+                    <option value="الإسكندرية">الإسكندرية</option>
+                    <option value="الشرقية">الشرقية</option>
+                    <option value="الدقهلية">الدقهلية</option>
+                    <option value="البحيرة">البحيرة</option>
+                    <option value="المنوفية">المنوفية</option>
+                    <option value="الغربية">الغربية</option>
+                    <option value="كفر الشيخ">كفر الشيخ</option>
+                    <option value="دمياط">دمياط</option>
+                    <option value="بورسعيد">بورسعيد</option>
+                    <option value="الإسماعيلية">الإسماعيلية</option>
+                    <option value="السويس">السويس</option>
+                    <option value="الفيوم">الفيوم</option>
+                    <option value="بني سويف">بني سويف</option>
+                    <option value="المنيا">المنيا</option>
+                    <option value="أسيوط">أسيوط</option>
+                    <option value="سوهاج">سوهاج</option>
+                    <option value="قنا">قنا</option>
+                    <option value="الأقصر">الأقصر</option>
+                    <option value="أسوان">أسوان</option>
+                    <option value="البحر الأحمر">البحر الأحمر</option>
+                    <option value="الوادي الجديد">الوادي الجديد</option>
+                    <option value="مطروح">مطروح</option>
+                    <option value="شمال سيناء">شمال سيناء</option>
+                    <option value="جنوب سيناء">جنوب سيناء</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>المنطقة/الحي <span class="required">*</span></label>
+                <input type="text" name="area" required placeholder="مثال: مدينة نصر، المعادي، إلخ">
+            </div>
+
+            <div class="form-group">
+                <label>رقم الهاتف <span class="required">*</span></label>
+                <input type="tel" name="phone" required placeholder="01xxxxxxxxx أو +249xxxxxxxxx"
+                    pattern="(^01[0-9]{9}$)|(^\+249[0-9]{9}$)|(^00249[0-9]{9}$)"
+                    title="أدخلي رقم مصري (01xxxxxxxxx) أو سوداني (+249xxxxxxxxx)">
+            </div>
+
+            <div class="form-group">
+                <label>الحالة الاجتماعية <span class="required">*</span></label>
+                <select name="maritalStatus" required>
+                    <option value="">اختاري</option>
+                    <option value="عزباء">عزباء</option>
+                    <option value="متزوجة">متزوجة</option>
+                    <option value="مطلقة">مطلقة</option>
+                    <option value="أرملة">أرملة</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>المؤهل الدراسي <span class="required">*</span></label>
+                <select name="education" required>
+                    <option value="">اختاري المؤهل</option>
+                    <option value="أقل من المتوسط">أقل من المتوسط</option>
+                    <option value="متوسط">متوسط</option>
+                    <option value="فوق المتوسط">فوق المتوسط</option>
+                    <option value="جامعي">جامعي</option>
+                    <option value="فوق الجامعي">فوق الجامعي</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>عندك خبرة سابقة في مجالسة الأطفال؟ <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="expYes" name="experience" value="نعم" required>
+                        <label for="expYes">نعم</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="expNo" name="experience" value="لا" required>
+                        <label for="expNo">لا</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>لو عندك خبرة، كام سنة؟</label>
+                <input type="number" name="experienceYears" min="0" max="50" placeholder="مثال: 2">
+            </div>
+
+            <div class="form-group">
+                <label>الفئة العمرية المفضلة للأطفال <span class="required">*</span></label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="age1" name="preferredAge" value="شهور - سنة">
+                        <label for="age1">شهور - سنة</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="age2" name="preferredAge" value="سنة - 3 سنين">
+                        <label for="age2">سنة - 3 سنين</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="age3" name="preferredAge" value="4 - 7 سنين">
+                        <label for="age3">4 - 7 سنين</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="age4" name="preferredAge" value="كل الأعمار">
+                        <label for="age4">كل الأعمار</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>أوقات العمل المتاحة <span class="required">*</span></label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="time1" name="availability" value="صباحي (8ص - 2م)">
+                        <label for="time1">صباحي (8ص - 2م)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="time2" name="availability" value="ظهري (12م - 6م)">
+                        <label for="time2">ظهرا (12م - 6م)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="time3" name="availability" value="مسائي (6م - 12م)">
+                        <label for="time3">مسائي (6م - 12م)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="time4" name="availability" value="مرن (أي وقت)">
+                        <label for="time4">مرن (أي وقت)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>عندك شهادات تدريبية في رعاية الأطفال؟</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="certYes" name="certificates" value="نعم">
+                        <label for="certYes">نعم</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="certNo" name="certificates" value="لا">
+                        <label for="certNo">لا</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>لو عندك شهادات، اذكريها</label>
+                <textarea name="certificateDetails" placeholder="اكتبي أسماء الشهادات أو الدورات"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>ملاحظات إضافية أو أي حاجة عايزة تقوليها</label>
+                <textarea name="notes" placeholder="أي معلومات تحبي تضيفيها"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">إرسال الطلب 💝</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            <h2>🎉 تم إرسال طلبك بنجاح!</h2>
+            <p>شكراً ليكي، هنتواصل معاكي في أقرب وقت 💕</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
