@@ -4,7 +4,7 @@ document.getElementById('beKhalaCard').addEventListener('click', function () {
     this.style.transform = 'scale(0.95)';
     setTimeout(() => {
         // Navigate to the form page
-        window.location.href = 'Khala-form.html';
+        window.location.href = 'khala-form.html';
     }, 200);
 });
 
